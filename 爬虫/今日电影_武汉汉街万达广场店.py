@@ -25,7 +25,7 @@ print(moviesList)
 # 创建列名
 fieldsname = ["movieTitleCn","movieTitleEn","director","runtime"]
 # 写csv文件
-with open('movieToday.csv','w',newline='') as csv_movieToday:
+with open(r'C:\Users\lll\Desktop\movieToday.csv','w',newline='') as csv_movieToday:
         csv_writer = csv.writer(csv_movieToday)	 # 创建csv writer对象
         csv_writer.writerow(fieldsname)		 # 写入列名
         for movie in moviesList:
